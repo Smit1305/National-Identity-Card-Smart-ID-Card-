@@ -1,0 +1,444 @@
+/* ====================================================================
+   SMART NIC – NATIONAL IDENTITY CARD MANAGEMENT SYSTEM
+   Academic SaaS Design System (Matching Sem_7_CV_Project)
+   Palette: Slate-50 (#F8FAFC), Card White (#FFFFFF), Royal Blue (#2563EB)
+   ==================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+code, pre, .mono {
+    font-family: 'JetBrains Mono', monospace !important;
+}
+
+.stApp {
+    background-color: #F8FAFC !important;
+    color: #0F172A !important;
+}
+
+/* Top Navigation Header Bar */
+.top-header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0 18px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #E2E8F0;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.page-main-title {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: #0F172A;
+    letter-spacing: -0.4px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.page-main-subtitle {
+    font-size: 0.82rem;
+    color: #64748B;
+    margin-top: 3px;
+    font-weight: 500;
+}
+
+.header-badge-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pill-status-green {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #F0FDF4;
+    color: #15803D;
+    border: 1px solid #BBF7D0;
+    border-radius: 9999px;
+    padding: 4px 12px;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.status-dot-green {
+    width: 7px;
+    height: 7px;
+    background-color: #22C55E;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.2);
+}
+
+.pill-admin-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #EFF6FF;
+    color: #2563EB;
+    border: 1px solid #BFDBFE;
+    border-radius: 9999px;
+    padding: 4px 12px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+.pill-citizen-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #ECFDF5;
+    color: #059669;
+    border: 1px solid #A7F3D0;
+    border-radius: 9999px;
+    padding: 4px 12px;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+/* KPI Stat Cards */
+.kpi-stat-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+    height: 100%;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.kpi-stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    border-color: #CBD5E1;
+}
+
+.kpi-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #64748B;
+    margin-bottom: 4px;
+}
+
+.kpi-number {
+    font-size: 1.85rem;
+    font-weight: 800;
+    color: #0F172A;
+    line-height: 1.2;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.kpi-desc {
+    font-size: 0.75rem;
+    color: #94A3B8;
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+.kpi-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.icon-box-blue { background-color: #EFF6FF; color: #2563EB; }
+.icon-box-purple { background-color: #F5F3FF; color: #7C3AED; }
+.icon-box-amber { background-color: #FFFBEB; color: #D97706; }
+.icon-box-green { background-color: #ECFDF5; color: #059669; }
+.icon-box-rose { background-color: #FFF1F2; color: #E11D48; }
+.icon-box-cyan { background-color: #ECFEFF; color: #0891B2; }
+
+/* Dashboard Panel Cards */
+.dashboard-panel-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 14px;
+    padding: 20px 22px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+    margin-bottom: 16px;
+}
+
+.panel-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.panel-card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0F172A;
+    margin-bottom: 2px;
+}
+
+.panel-card-subtitle {
+    font-size: 0.78rem;
+    color: #64748B;
+}
+
+.inner-session-box {
+    background-color: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    padding: 14px 16px;
+    display: flex;
+    gap: 24px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+}
+
+.session-meta-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #94A3B8;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.session-meta-value {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #0F172A;
+}
+
+.session-meta-value-blue {
+    color: #2563EB;
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+/* Verification Result Banners */
+.verify-banner {
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 14px;
+    border: 1px solid #E2E8F0;
+}
+.verify-valid { background-color: #ECFDF5; border-color: #A7F3D0; border-left: 6px solid #059669; }
+.verify-expired { background-color: #FFFBEB; border-color: #FDE68A; border-left: 6px solid #D97706; }
+.verify-revoked { background-color: #FEF2F2; border-color: #FECACA; border-left: 6px solid #DC2626; }
+.verify-invalid { background-color: #FEF2F2; border-color: #FECACA; border-left: 6px solid #DC2626; }
+.verify-notfound { background-color: #F1F5F9; border-color: #CBD5E1; border-left: 6px solid #64748B; }
+
+/* Sidebar Styling */
+section[data-testid="stSidebar"] {
+    background-color: #FFFFFF !important;
+    border-right: 1px solid #E2E8F0 !important;
+}
+
+section[data-testid="stSidebar"] .block-container {
+    padding-top: 1.4rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.sidebar-brand-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 4px 4px 16px 4px;
+    border-bottom: 1px solid #F1F5F9;
+    margin-bottom: 12px;
+}
+
+.sidebar-logo-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #2563EB;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.3rem;
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
+    flex-shrink: 0;
+}
+
+.sidebar-brand-title {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #0F172A;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+}
+
+.sidebar-brand-subtitle {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #64748B;
+}
+
+.sidebar-section-title {
+    font-size: 0.68rem;
+    font-weight: 800;
+    color: #94A3B8;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin: 12px 0 6px 6px;
+}
+
+/* Hide Streamlit's Default Widget Label in Sidebar Radio */
+section[data-testid="stSidebar"] div[data-testid="stRadio"] label[data-testid="stWidgetLabel"] {
+    display: none !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stRadio"] > div[role="radiogroup"] {
+    gap: 3px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stRadio"] label {
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 8px 12px !important;
+    border-radius: 8px !important;
+    background-color: transparent !important;
+    border: 1px solid transparent !important;
+    transition: all 0.15s ease !important;
+    cursor: pointer !important;
+    margin: 0 !important;
+}
+
+/* Hide ONLY Radio Circle & Input — NEVER hide text container */
+section[data-testid="stSidebar"] div[data-testid="stRadio"] label > div:first-of-type {
+    display: none !important;
+}
+section[data-testid="stSidebar"] div[data-testid="stRadio"] input[type="radio"] {
+    display: none !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stRadio"] label > div:last-child,
+section[data-testid="stSidebar"] div[data-testid="stRadio"] [data-testid="stMarkdownContainer"] {
+    display: flex !important;
+    align-items: center !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stRadio"] label [data-testid="stMarkdownContainer"] p {
+    color: #334155 !important;
+    font-size: 0.84rem !important;
+    font-weight: 600 !important;
+    line-height: 1.35 !important;
+    margin: 0 !important;
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stRadio"] label:hover {
+    background-color: #F1F5F9 !important;
+    border-color: #CBD5E1 !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stRadio"] label:hover [data-testid="stMarkdownContainer"] p {
+    color: #0F172A !important;
+    font-weight: 700 !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stRadio"] label:has(input:checked) {
+    background-color: #EFF6FF !important;
+    border: 1px solid #BFDBFE !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stRadio"] label:has(input:checked) [data-testid="stMarkdownContainer"] p {
+    color: #2563EB !important;
+    font-weight: 800 !important;
+}
+
+/* Buttons */
+div[data-testid="stButton"] button,
+div[data-testid="stDownloadButton"] button,
+div[data-testid="stFormSubmitButton"] button,
+button[kind="secondary"] {
+    background-color: #FFFFFF !important;
+    color: #0F172A !important;
+    border: 1px solid #CBD5E1 !important;
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03) !important;
+}
+
+div[data-testid="stButton"] button *,
+div[data-testid="stDownloadButton"] button *,
+div[data-testid="stFormSubmitButton"] button * {
+    color: #0F172A !important;
+    font-weight: 700 !important;
+}
+
+div[data-testid="stButton"] button[kind="primary"],
+div[data-testid="stFormSubmitButton"] button[kind="primary"],
+button[kind="primary"] {
+    background-color: #2563EB !important;
+    color: #FFFFFF !important;
+    border: 1px solid #1D4ED8 !important;
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+}
+
+div[data-testid="stButton"] button[kind="primary"] *,
+div[data-testid="stFormSubmitButton"] button[kind="primary"] *,
+button[kind="primary"] * {
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
+}
+
+/* Badges */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 9px;
+    border-radius: 9999px;
+    font-size: 0.74rem;
+    font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+}
+.badge-tcp { background-color: #EFF6FF; color: #2563EB; border: 1px solid #BFDBFE; }
+.badge-udp { background-color: #FFFBEB; color: #D97706; border: 1px solid #FDE68A; }
+.badge-allow { background-color: #ECFDF5; color: #059669; border: 1px solid #A7F3D0; }
+.badge-drop { background-color: #FEF2F2; color: #DC2626; border: 1px solid #FECACA; }
+.badge-other { background-color: #F1F5F9; color: #475569; border: 1px solid #CBD5E1; }
+
+/* Dataframes & Tabs */
+[data-testid="stDataFrame"] {
+    background-color: #FFFFFF !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 10px !important;
+}
+
+button[data-baseweb="tab"] {
+    color: #475569 !important;
+    font-weight: 600 !important;
+}
+
+button[data-baseweb="tab"][aria-selected="true"] {
+    color: #2563EB !important;
+    font-weight: 800 !important;
+}
